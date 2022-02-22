@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+
+body {
+    margin: auto 200px;
+
+}
+
+/* this should be a grid */
+main {
+    margin-top: 100px;
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background-color: orangered;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* give a size to card.  */
+
+/* I need to know about sizes in css. 
+and give the card responsive size. */
+
+/* use jonas first */
