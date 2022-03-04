@@ -1,3 +1,11 @@
+/* mobile first design */
+
+
+
+
+/* ################################################ */
+
+/* Browser Reset */
 *,
 *::after,
 *::before {
@@ -7,44 +15,68 @@
 }
 
 html {
-    /* font-size: 10px; */
     font-size: 62.5%;
 }
 
 body {
-    margin: auto 200px;
-    font-size: 16px;
     box-sizing: border-box;
 }
 
-/* this should be a grid */
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 100px;
-    background-color:rgba(0, 0, 0, 0.267);
+/* Global Values */
+h1 {
+    font-size: 7rem;
+}
+p {
+    font-size: 1.6rem;
 }
 
-.card {
-    width: 250px;
-    height: 300px;
 
-    background-image: linear-gradient(to bottom right,  rgba(128, 208, 199, 0.6), rgba(0, 149, 235, 0.8) ), url(./assets/paris.jpg);
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
+
+
+
+
+/* Section rules  */
+
+header {
     text-align: center;
-    border-radius: 5px;
-    box-shadow: 1px .5px 5px 1px rgba(0, 0, 0, 0.267);
+    padding-top: 2rem;
+}
+
+nav {
+    display: none;
+}
+
+.content-wrapper {
+    max-width: 80%;
+    margin: 10% auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+.boxe {
+    min-height: 10rem;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
 }
 
 
 
 
 
-/* give a size to card.  */
+footer {
+    width: 100%;
+    padding: .5rem;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+}
 
-/* I need to know about sizes in css. 
-and give the card responsive size. */
+/* Media Queries */
 
-/* use jonas first */
